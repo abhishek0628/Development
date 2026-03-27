@@ -1,0 +1,8 @@
+Execution:
+
+"Start" prints
+Node pauses everything
+Reads file
+Then prints "End"
+
+No multitasking. No efficiency. Just patience.
