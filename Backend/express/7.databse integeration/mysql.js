@@ -19,6 +19,7 @@ db.connect(err=>{
     console.log("connected")
 })
 
+//create user
 app.post("/users", (req, res) => {
     const { name, age } = req.body;
 
@@ -36,6 +37,7 @@ app.post("/users", (req, res) => {
     });
 });
 
+//get user
 app.get("/api/users", (req, res) => {
     db.query("SELECT * FROM users", (err, result) => {
         if (err) {
@@ -45,6 +47,28 @@ app.get("/api/users", (req, res) => {
         res.json(result);
     });
 });
+
+app.put("/update/:id",(req,res)=>{
+    const {name,roll}=req.body();
+    const sql="UPDATE users SET name=? roll=?where id=?"
+    db.query(sql,[name,roll,req.params.id],(err,result)=>{
+        if(err){
+            console.log(err);
+            return res.status(500).send("error updating")
+        }
+        res.send("user updated")
+    })
+})
+app.delete("/delete/:id",(req,res)=>{
+    const sql="DELETE users WHERE id=?"
+    db.query(sql,[req.params.id],(err,result)=>{
+        if(err){
+            console.log(err);
+            return res.status(500).send("error deleteing");
+        }
+        res.send("user deleted")
+    })
+})
 app.get("/users",(req,res)=>{
     res.sendFile(path.join(__dirname,"index.html"))
     // res.sendFile(Path.join(__dirname,"../frontend/public/index.html"))
