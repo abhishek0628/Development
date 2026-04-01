@@ -78,3 +78,4 @@ target/
 # extra files
 test.*
 project/
+myapp/
