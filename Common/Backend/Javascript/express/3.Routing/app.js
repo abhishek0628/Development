@@ -4,6 +4,9 @@ const usersRouter = require('./users');
 app.get("/",(req,res)=>{
     res.send("home")
 })
+app.get("/index",(req,res)=>{
+    res.sendFile(path.join(__dirname,"index.html"));
+})
 
 app.use('/users', usersRouter);
 
