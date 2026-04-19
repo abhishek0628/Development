@@ -2,8 +2,8 @@ const path=require("path");
 // import path from "path";
 const currentdir=__dirname;
 const currentfile=__filename;
-const filepath=path.join("folder/subfolder/data.txt");
-const parsedata=path.parse(filepath);
+const filepath=path.join("folder/subfolder/data.txt");//create file path
+const parsedata=path.parse(filepath);//showing details in json format
 const pathresolve=path.resolve(filepath);
 const pathbase=path.basename(filepath);
 const fileextension=path.extname(filepath);
