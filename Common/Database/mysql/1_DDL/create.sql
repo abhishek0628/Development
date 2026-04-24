@@ -14,6 +14,7 @@ USE college;
 --          .
 --          .
 --          );
+-- parent table
 CREATE TABLE student(
     roll_no int primary key,
     name VARCHAR(20) NOT NULL,
@@ -27,11 +28,12 @@ create table student(
     branch varchar(20),
     primary key(roll_no)
 );
+-- child table
 create table courses(
     course_id varchar(20) primary key not null,
     course_name varchar(20),
     roll_no int ,
-    foreign_key(roll_no) references student(roll_no)
+    foreign key(roll_no) references student(roll_no)
 );
 create table account(
     acc_no bigint primary key,

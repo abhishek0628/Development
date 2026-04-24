@@ -16,6 +16,7 @@ ORDER BY age ASC, marks DESC;
 SELECT name, marks, age
 FROM student
 ORDER BY 2 DESC;
+-- 2:marks
 
 SELECT name, marks + 5 AS adjusted_marks
 FROM student
