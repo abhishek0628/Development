@@ -1,7 +1,7 @@
--- drop table
--- DROP tablename;
-DROP student;
+-- drop table tablename;
+-- DROP TABLE tablename;
+DROP TABLE student;
 
--- drop database
--- DROP databasename;
-DROP college;
+-- drop database databsename;
+-- DROP DATABASE databasename;
+DROP DATABASE college;
