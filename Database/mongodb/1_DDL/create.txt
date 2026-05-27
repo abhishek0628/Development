@@ -1,0 +1,23 @@
+// use databaseName
+use college;
+
+//db.createCollection("collection_name)
+db.createCollection("students)
+
+//
+db.createCollection("students",{
+    validator:{
+        $jsonSchema:{
+            bsonType:"object",
+            required:["name","age"],
+            properties:{
+                name:{
+                    bsonType:"string"
+                },
+                age:{
+                    bsonType:"int"
+                }
+            }
+        }
+    }
+})

@@ -1,0 +1,20 @@
+db.collection_name.insertOne({
+    field1:"",
+    ....
+})
+
+db.collection_name.insertMany([
+    {field1:value1,fiels2:value2...},
+    {field1:value3,field2:value4...}
+])
+
+db.students.insertOne({
+    name:"alex",
+    age:12,
+    marks:21
+})
+
+db.students.insertMany([
+    {name:"alice",age:11,marks:24},
+    {name:"bob",age:13,marks:25}
+])
