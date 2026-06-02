@@ -1,0 +1,22 @@
+📦 What is NPM (Node Package Manager)?
+NPM is the default package manager for Node.js, used to:
+
+Install third-party packages (like Express, React, etc.)
+
+Manage dependencies for your Node.js project
+
+Run custom scripts (like npm start, npm test)
+
+Share your own packages with others
+
+🔧 Common NPM Commands
+Command      	            Purpose
+npm init	                Start a new project (package.json)
+npm install <package>	    Install a package (e.g., npm install express)
+npm install	                Install all dependencies listed in package.json
+npm install <pkg> --save	(Old) Save package to dependencies
+npm install <pkg> --save-dev	Save package to devDependencies
+npm uninstall <package>	    Remove a package
+npm update	                Update all packages
+npm start	                Run the start script in package.json
+npm run <script-name>	    Run any script from package.json
