@@ -15,7 +15,8 @@ function AddCourse() {
    const [course, setCourse] = useState({
 
       courseName: "",
-      description: ""
+      description: "",
+      Link:""
     //   backend: "",
     //   frontend: "",
     //   GithubLink: ""
@@ -87,6 +88,13 @@ function AddCourse() {
                   type="text"
                   name="description"
                   placeholder="Description"
+                  onChange={handleChange}
+                  className="p-3 rounded bg-gray-800 outline-none"
+               />
+                <input
+                  type="text"
+                  name="Link"
+                  placeholder="Github Link"
                   onChange={handleChange}
                   className="p-3 rounded bg-gray-800 outline-none"
                />

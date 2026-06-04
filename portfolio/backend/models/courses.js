@@ -20,9 +20,9 @@ const courseSchema = new mongoose.Schema({
 //       type: String
 //    },
 
-//    GithubLink: {
-//       type: String
-//    },
+   Link: {
+      type: String
+   },
 
    userId: {
       type: mongoose.Schema.Types.ObjectId,

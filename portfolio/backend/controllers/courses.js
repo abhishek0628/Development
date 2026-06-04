@@ -17,7 +17,7 @@ router.post("/api/addCourse", async (req, res) => {
          description,
         //  backend,
         //  frontend,
-        //  GithubLink,
+         Link,
          userId
       } = req.body;
 
@@ -27,7 +27,7 @@ router.post("/api/addCourse", async (req, res) => {
          description,
         //  backend,
         //  frontend,
-        //  GithubLink,
+         Link,
          userId
 
       });

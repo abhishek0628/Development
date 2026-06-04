@@ -4,6 +4,7 @@ const mysql=require("mysql2")//npm insatll mysql2
 const bodyparser=require("body-parser")//npm install body-parser
 const multer=require("multer")//npm install multer
 const redis=require("redis");//npm install redis
+const jwt=require("jsonwebtoken")//npm install jsonwebtoken
 const app=express()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
