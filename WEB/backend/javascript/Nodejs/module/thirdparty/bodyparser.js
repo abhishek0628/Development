@@ -1,5 +1,5 @@
 const express = require('express');
-const bodyParser = require('body-parser');
+const bodyParser = require('body-parser');//npm install body-parser
 
 const app = express();
 

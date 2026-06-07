@@ -1,1 +1,1 @@
-//npm install -g nodemon
+//npm install -g nodemon //install globally

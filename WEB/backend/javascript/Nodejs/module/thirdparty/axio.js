@@ -1,4 +1,4 @@
-const axios = require('axios');
+const axios = require('axios');//npm install axios
 
 axios.get('https://jsonplaceholder.typicode.com/posts')
     .then(response => {

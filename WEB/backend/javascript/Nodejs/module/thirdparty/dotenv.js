@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('dotenv').config();//npm install dotenv
 
 const port = process.env.PORT || 5000;
 

@@ -2,3 +2,5 @@ CREATE TABLE Student (
     id INT NOT NULL,
     name VARCHAR(50) NOT NULL
 );
+ALTER TABLE students
+MODIFY email VARCHAR(50) NOT NULL;
